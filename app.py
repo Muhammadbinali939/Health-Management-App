@@ -33,7 +33,7 @@ def input_image_setup(uploaded_file):
 
 # Initialize Streamlit app
 st.set_page_config(page_title="Health Management App", layout="centered")
-st.title("🍎 Gemini Health App 🍎")  # Mobile-friendly header with emoji
+st.title("Health Management App 🍎")  # Mobile-friendly header with emoji
 
 # Input Prompt
 user_input = st.text_input("Enter additional info (optional):", key="input")
@@ -69,3 +69,4 @@ if submit:
                 st.write(response)
     else:
         st.warning("Please upload an image to get results")
+
